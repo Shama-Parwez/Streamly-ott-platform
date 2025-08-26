@@ -64,8 +64,7 @@ const Signup = () => {
           </Form.Group>
 
           <Button type="submit" className="w-100 fw-bold" style={{ backgroundColor: "#e50914", border: "none" }}>
-            Sign Up
-          </Button>
+            Sign Up </Button>
         </Form>
         <p className="mt-3 text-center">
           Already have an account?{" "}
@@ -73,9 +72,7 @@ const Signup = () => {
             className="fw-bold"
             style={{ color: "#e50914", cursor: "pointer" }}
             onClick={() => navigate("/login")}
-          >
-            Login
-          </span>
+          > Login </span>
         </p>
       </Card>
     </div>

@@ -1,10 +1,8 @@
-// src/api/api.js
 import axios from "axios";
 
-const API_KEY = "ae82116359957bb1b6db99826776d4fb";  // 🔴 apni TMDB API key yaha daalo
+const API_KEY = "ae82116359957bb1b6db99826776d4fb";
 const BASE_URL = "https://api.themoviedb.org/3";
 
-// Axios instance
 const api = axios.create({
   baseURL: BASE_URL,
   params: {
@@ -13,7 +11,6 @@ const api = axios.create({
   },
 });
 
-// Functions for different categories
 export const getPopularMovies = () => api.get("/movie/popular");
 export const getTopRatedMovies = () => api.get("/movie/top_rated");
 export const getUpcomingMovies = () => api.get("/movie/upcoming");

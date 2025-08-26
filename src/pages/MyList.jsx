@@ -4,29 +4,23 @@ import { FaTrash } from "react-icons/fa";
 
 const MyList = () => {
   const [myList, setMyList] = useState([]);
-
-  // ✅ Load My List from localStorage once
   useEffect(() => {
     const saved = JSON.parse(localStorage.getItem("myList")) || [];
     setMyList(saved);
   }, []);
-
-  // ✅ Remove item from My List
   const removeFromMyList = (item) => {
     const updated = myList.filter(
       (m) => !(m.id === item.id && m.title === item.title)
     );
     setMyList(updated);
-    localStorage.setItem("myList", JSON.stringify(updated)); // storage update
+    localStorage.setItem("myList", JSON.stringify(updated));
   };
-
   return (
     <div style={{ background: "#121212", minHeight: "100vh", padding: "40px 0" }}>
       <Container className="text-white">
         <h2 className="mb-4 fw-bold" style={{ color: "#e50914" }}>
           My List ❤️
         </h2>
-
         {myList.length === 0 ? (
           <p style={{ color: "rgba(255,255,255,0.7)" }}>No items in My List yet.</p>
         ) : (

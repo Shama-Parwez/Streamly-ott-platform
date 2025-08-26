@@ -2,9 +2,6 @@ import React, { useEffect, useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { Card, Button } from "react-bootstrap";
 import { FaUserCircle, FaMoon, FaSun } from "react-icons/fa";
-// api.jsx me
-
-
 
 const Profile = () => {
   const navigate = useNavigate();

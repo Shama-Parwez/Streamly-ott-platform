@@ -8,8 +8,6 @@ export default function Subscription() {
           Choose Your Plan
         </h2>
         <div className="row justify-content-center">
-
-          {/* Basic Plan */}
           <div className="col-md-4">
             <div className="card bg-dark text-white shadow-lg mb-4 border-0">
               <div className="card-body">
@@ -19,8 +17,6 @@ export default function Subscription() {
               </div>
             </div>
           </div>
-
-          {/* Standard Plan */}
           <div className="col-md-4">
             <div className="card bg-dark text-white shadow-lg mb-4 border-0">
               <div className="card-body">
@@ -30,8 +26,6 @@ export default function Subscription() {
               </div>
             </div>
           </div>
-
-          {/* Premium Plan */}
           <div className="col-md-4">
             <div className="card bg-dark text-white shadow-lg mb-4 border-0">
               <div className="card-body">
@@ -41,7 +35,6 @@ export default function Subscription() {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
